@@ -10,7 +10,12 @@ describe('FizzBuzz', function() {
     it("prints 'Fizz' when number is divisible by 3", function() {
       expect(fizzBuzz.play(3)).toEqual('Fizz');
     });
+  });
 
+  describe('Buzz', function() {
+    it("prints 'Buzz' when number is divisible by 5", function() {
+      expect(fizzBuzz.play(5)).toEqual('Buzz');
+    });
   });
 
 });
