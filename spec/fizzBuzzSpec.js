@@ -18,4 +18,15 @@ describe('FizzBuzz', function() {
     });
   });
 
+  describe('FizzBuzz', function() {
+    it ("prints 'FizzBuzz' when number is divisible by 3 and 5", function() {
+      expect(fizzBuzz.play(15)).toEqual('FizzBuzz');
+    });
+  });
+
+  describe('Print numbers', function() {
+    it ("prints numbers not divisible by 3 or 5", function() {
+      expect(fizzBuzz.play(8)).toEqual(8);
+    });
+  });
 });
